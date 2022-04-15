@@ -35,3 +35,20 @@ async def callback(bot, msg):
             text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
         )
         await reply7.delete()
+        await msg.message.edit(
+            text="I Aᴍ Rᴇx Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Sɪᴍᴘʟʏ Nᴏ Usᴇ Aɴᴅ I Wɪʟʟ Bᴇ A Hᴜɢᴇ Bᴏᴛ Oɴᴇ Dᴀʏ Wᴀɪᴛ Fᴏʀ Tʜᴀᴛ Dᴀʏ"
+            reply_markup=InlineKeyboardMarkup( [[
+                InlineKeyboardButton("Hᴇʟᴩ", callback_data="help")
+                ],[
+                InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="abou")
+               ]]
+               )
+        )
+
+    elif msg.data == "abou":
+        await msg.message.edit(
+            text="""<b>✮ 𝙼𝚈 𝙽𝙰𝙼𝙴: 𝚁𝙴𝚇
+✮ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: 𝚉𝙸𝙽𝙰𝙽
+✮ 𝚂𝙿𝙴𝙲𝙸𝙰𝙻 𝚃𝙷𝙰𝙽𝙺𝚂 𝚃𝙾: <a href=https://t.me/Mo_Tech_YT>𝙼𝙾 𝚃𝙴𝙲𝙷</a>
+✮ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
+✮ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹</b>"""
