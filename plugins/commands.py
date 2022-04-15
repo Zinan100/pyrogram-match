@@ -24,7 +24,7 @@ async def start_msg(bot, msg):
           )
           return
     await msg.reply_photo(
-        photo=https://telegra.ph/file/3b50378837115d65e9197.jpg
+        photo="https://telegra.ph/file/3b50378837115d65e9197.jpg"
         caption="I Aᴍ Rᴇx Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Sɪᴍᴘʟʏ Nᴏ Usᴇ Aɴᴅ I Wɪʟʟ Bᴇ A Hᴜɢᴇ Bᴏᴛ Oɴᴇ Dᴀʏ Wᴀɪᴛ Fᴏʀ Tʜᴀᴛ Dᴀʏ"
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("Hᴇʟᴩ", callback_data="help")
