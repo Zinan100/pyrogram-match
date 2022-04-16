@@ -2,6 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
 import random
+import asyncio
 
 Force = "M_E_UPDATEZ"
 
@@ -23,6 +24,8 @@ async def start_msg(bot, msg):
                  )
           )
           return
+    await msg.reply_chat_action("typing")
+    await asyncio.sleep(1)
     await msg.reply_photo(
         photo="https://telegra.ph/file/3b50378837115d65e9197.jpg",
         caption="I Aᴍ Rᴇx Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Sɪᴍᴘʟʏ Nᴏ Usᴇ Aɴᴅ I Wɪʟʟ Bᴇ A Hᴜɢᴇ Bᴏᴛ Oɴᴇ Dᴀʏ Wᴀɪᴛ Fᴏʀ Tʜᴀᴛ Dᴀʏ",
