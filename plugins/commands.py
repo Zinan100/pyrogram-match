@@ -31,10 +31,10 @@ async def start_msg(bot, msg):
     await msg.reply_photo(
         photo="https://telegra.ph/file/3b50378837115d65e9197.jpg",
         caption="Hi {message.from_user.mention} {get} I Aᴍ Rᴇx Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Sɪᴍᴘʟʏ Nᴏ Usᴇ Aɴᴅ I Wɪʟʟ Bᴇ A Hᴜɢᴇ Bᴏᴛ Oɴᴇ Dᴀʏ Wᴀɪᴛ Fᴏʀ Tʜᴀᴛ Dᴀʏ",
-        now = datetime.datetime.now()
-        tz = pytz.timezone('asia/kolkata')
-        your_now = now.astimezone(tz)
-        hour = your_now.hour
+        now=datetime.datetime.now()
+        tz=pytz.timezone('asia/kolkata')
+        your_now=now.astimezone(tz)
+        hour=your_now.hour
         if 0 <= hour <12:
             get = "Gᴏᴏᴅ ᴍᴏʀɴɪɴɢ"
         elif 12 <= hour <17:
