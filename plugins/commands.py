@@ -29,10 +29,10 @@ async def start_msg(bot, msg):
           return
     await msg.reply_chat_action("typing")
     await asyncio.sleep(1)
-    now=datetime.datetime.now()
-        tz=pytz.timezone('asia/kolkata')
+        now = datetime.datetime.now()
+        tz = pytz.timezone('asia/kolkata')
         your_now=now.astimezone(tz)
-        hour=your_now.hour
+        hour = your_now.hour
         if 0 <= hour <12:
             get = "Gᴏᴏᴅ ᴍᴏʀɴɪɴɢ"
         elif 12 <= hour <17:
