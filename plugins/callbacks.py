@@ -7,7 +7,7 @@ from pyrogram.types import CallbackQuery
 @Client.on_callback_query()
 async def callback(bot, msg):
     if msg.data == "start":
-        reply1 = await query.message.reply_text(
+        reply1 = await msg.message.reply_text(
             text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
         )
         await asyncio.sleep(0.5)
@@ -46,7 +46,7 @@ async def callback(bot, msg):
         )
 
     elif msg.data == "abou":
-        reply1 = await query.message.reply_text(
+        reply1 = await msg.message.reply_text(
             text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
         )
         await asyncio.sleep(0.5)
@@ -88,7 +88,7 @@ async def callback(bot, msg):
         )
 
     elif msg.data == "help":
-        reply1 = await query.message.reply_text(
+        reply1 = await msg.message.reply_text(
             text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
         )
         await asyncio.sleep(0.5)
