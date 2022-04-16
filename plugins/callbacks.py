@@ -81,6 +81,11 @@ async def callback(bot, msg):
 ✮ 𝚂𝙿𝙴𝙲𝙸𝙰𝙻 𝚃𝙷𝙰𝙽𝙺𝚂 𝚃𝙾: <a href=https://t.me/Mo_Tech_YT>𝙼𝙾 𝚃𝙴𝙲𝙷</a>
 ✮ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✮ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹</b>"""
+            reply_markup=InlineKeyboardMarkup( [[
+                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="start")
+               ]]
+               )
+        )
 
     elif msg.data == "help":
         reply1 = await query.message.reply_text(
@@ -114,4 +119,7 @@ async def callback(bot, msg):
         await msg.message.edit(
             text="𝙷𝙴𝙻𝙿 ഒന്നും ഇല്ല ഓടിക്കൊ"
             reply_markup=InlineKeyboardMarkup( [[
-                Inl
+                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="start")
+               ]]
+               )
+        )
